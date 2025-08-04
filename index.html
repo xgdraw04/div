@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>展示圖片</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+      document.addEventListener("dragstart", function (e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="dog.jpg" alt="展示圖片" />
+  </div>
+</body>
+</html>
