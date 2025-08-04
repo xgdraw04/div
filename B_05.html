@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (localStorage.getItem("auth_pass") !== "90666673mep") {
+        window.location.href = "index.html";
+      }
+    });
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
+  </script>
   <meta charset="UTF-8">
   <title>鑽探報告判讀重點</title>
   <style>

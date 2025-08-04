@@ -18,6 +18,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       var pw = prompt("請輸入密碼：");
       if (pw === "90666673mep") {
+        localStorage.setItem("auth_pass", "90666673mep");
         document.getElementById("content").style.display = "block";
       } else {
         document.body.innerHTML = "<h2 style='text-align:center;padding-top:50px;'>密碼錯誤，請重新整理頁面</h2>";
