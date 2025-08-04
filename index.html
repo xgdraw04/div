@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>展示圖片</title>
+  <title>展示圖片 + 檔案下載</title>
   <style>
     body {
       background-color: #f7f7f7;
@@ -28,6 +28,20 @@
       padding: 20px;
       border-radius: 12px;
     }
+
+    a.download {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    a.download:hover {
+      background-color: #0056b3;
+    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -43,6 +57,9 @@
 <body>
   <div class="wrapper">
     <img src="dog.jpg" alt="展示圖片" />
+    <p>
+      <a class="download" href="interview.rar" download>📥 下載面試檔案</a>
+    </p>
   </div>
 </body>
 </html>
