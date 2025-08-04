@@ -1,61 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>展示圖片 + 檔案下載（需密碼）</title>
+  <meta charset="UTF-8">
+  <title>教育訓練架構</title>
   <style>
-    body {
-      background-color: #f7f7f7;
-      margin: 0;
-      padding: 40px;
-      font-family: sans-serif;
-      display: flex;
-      justify-content: center;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      user-select: none;
-      pointer-events: none;
-    }
-
-    .wrapper {
-      max-width: 800px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    a.download {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-
-    a.download:hover {
-      background-color: #0056b3;
-    }
+    body { font-family: sans-serif; padding: 40px; background: #f7f7f7; }
+    h2 { color: #333; }
+    ul { line-height: 1.8; }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
-  <script>
-    var password = prompt("請輸入密碼：");
-    if (password !== "90666673mep") {
-      document.body.innerHTML = "<h2 style='text-align:center;padding-top:50px;'>密碼錯誤，請重新整理頁面</h2>";
-    }
-  </script>
 </head>
 <body>
-  <div class="wrapper">
-    <img src="dog.jpg" alt="展示圖片" />
-    <p>
-      <a class="download" href="interview.rar" download>📥 下載面試檔案</a>
-    </p>
-  </div>
-</body>
-</html>
+  <h1>教育訓練架構總覽</h1>
+<h2>A - 部門工作</h2>
+<ul>
+<li><a href="A_01.html">管理制度</a></li>
+<li><a href="A_02.html">任務分類</a></li>
+<li><a href="A_03.html">專案流程</a></li>
+</ul>
+<h2>B - 通識介紹</h2>
+<ul>
+<li><a href="B_01.html">建築機電基礎概念說明</a></li>
+<li><a href="B_02.html">建築結構種類概述</a></li>
+</ul>
+<h2>C - 圖面作業</h2>
+<ul>
+<li><a href="C_01.html">施工圖要點講解</a></li>
+</ul>
+<h2>D - 軟體操作</h2>
+<ul>
+<li><a href="D_01.html">基本指令講解</a></li>
+</ul>
+</body></html>
