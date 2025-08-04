@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>展示圖片 + 檔案下載</title>
+  <title>展示圖片 + 檔案下載（需密碼）</title>
   <style>
     body {
       background-color: #f7f7f7;
@@ -44,14 +44,10 @@
     }
   </style>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-      });
-      document.addEventListener("dragstart", function (e) {
-        e.preventDefault();
-      });
-    });
+    var password = prompt("請輸入密碼：");
+    if (password !== "90666673mep") {
+      document.body.innerHTML = "<h2 style='text-align:center;padding-top:50px;'>密碼錯誤，請重新整理頁面</h2>";
+    }
   </script>
 </head>
 <body>
