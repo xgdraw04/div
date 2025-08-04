@@ -15,15 +15,16 @@
     if (password !== "90666673mep") {
       document.body.innerHTML = "<h2 style='text-align:center;padding-top:50px;'>密碼錯誤，請重新整理頁面</h2>";
     }
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
   </script>
 </head>
 <body>
   <h1>教育訓練架構總覽</h1>
 <h2>A - 部門工作</h2>
 <ul>
-<li><a href="A_01.html">管理制度</a></li>
-<li><a href="A_02.html">任務分類</a></li>
-<li><a href="A_03.html">專案流程</a></li>
+<li><a href="A_00.html">部門工作總覽</a></li>
 </ul>
 <h2>B - 通識介紹</h2>
 <ul>
@@ -72,8 +73,8 @@
 <ul>
 <li><a href="D_01.html">基本指令講解</a></li>
 <li><a href="D_02.html">標註設定</a></li>
-<li><a href="D_03.html">圖塊操作說明</a></li>
 <li><a href="D_04.html">圖層/圖層管理員說明</a></li>
+<li><a href="D_05.html">圖紙設定</a></li>
 <li><a href="D_05.html">圖紙設定</a></li>
 </ul>
 </body></html>
